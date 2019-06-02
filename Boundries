@@ -1,0 +1,19 @@
+x 950 y [20,450]
+
+min max values
+xmax = 950
+ymax = 450
+
+collosion with soil
+x = 250 y = 180
+
+checks
+x = 250 y = 110
+x = 300 y = 160
+x = 350 y = 210
+x = 400 y = 260
+x = 450 y = 300
+x = 500 y = 370
+x = 550 y = 450
+x = 500+ y = nolimit
+
