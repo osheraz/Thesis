@@ -16,4 +16,5 @@ x = 450 y = 300
 x = 500 y = 370
 x = 550 y = 450
 
-
+x=linspace(270,339,dx)
+y=linspace(197,260,dy)
