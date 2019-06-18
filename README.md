@@ -1,33 +1,31 @@
 ﻿#  Thesis AUTONOMOUS Loader
 
 ## Description
-The repository contain 
+The repository contain arm control files for project number 19-20 including:
+* arm_control - ROS package.
+* matlab direct and inverse kinematics.
+* arduino pwn,dir publisher files.
 
 <p align="center">
   <img src="https://i.ibb.co/wRcBjgg/k4.jpg" width="350"/>
 </p>
 
-## TODO
-* improve loading sand, maybe change grains model.
-* improve sand spilling visualization.
-* start working on bobby-sand forces.
-* start working on wheels/tracks-surface forces.
-* add demos for specific situations.
+## Simulation
 
 ## Configuration
-The control commands for the bobcat are to be published in `controlCMD` topic in robot's namespace.
-The message consists of the following fields (included types/range of values received from `joy_listener`):
-1. linear_velocity {-0.05 : 0.05} **Higher values will make the robot misbehave!!!**
-1. angular_velocity {-0.5 : 0.5}
-1. hydraulics_velocity {-1 : 1}
-1. loader_velocity {-1 : 1}
-1. brackets_velocity {-1 : 1}
-1. spawn_sand {bool}
-1. clear_workplace {bool}
-1. pause {bool}
-1. reset {bool}
-Boolean values published continuously will lead to repeated action.
+The control commands for the loader needs to be published via the joints topic.
+### komodo2:
+1. linear_velocity {-1 : 1} 
+1. angular_velocity {-1 : 1}
+### arm mechanisem:
+1. arm {-0.5 : 0.5} 
+1. bucket {-0.5 : 0.5}
 
+## TODO
+* improve control via simulation in gazebo
+* add pile of sand recognition
+* add force\torque sensor to the bucket.
+* add demos for specific situations.
 
 
 ## Contacts
