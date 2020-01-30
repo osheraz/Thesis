@@ -1,4 +1,3 @@
-%% 305277071 Lihi Kalakuda & 203099247 Osher Azulay
 %x1=centerx;y1=centery;
 clearvars -except x1 y1
 clc
